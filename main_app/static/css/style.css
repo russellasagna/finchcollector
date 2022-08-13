@@ -9,10 +9,15 @@ main {
 }
 
 nav, footer.page-footer {
-  background-color: black;
+  background-color: brown;
 }
 
 footer.page-footer {
   padding-top: 0;
   text-align: right;
+}
+
+button.btn {
+  background-color: gold;
+  color: black;
 }

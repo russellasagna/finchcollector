@@ -22,7 +22,11 @@ def finches_detail(request, finch_id):
 class FinchCreate(CreateView):
   model = Finch
   fields = '__all__'
-  # success_url = '/finches/'
 
-  # def get_success_url(self):
-  #   return f'/finches/{self.object.id}'
+class FinchUpdate(UpdateView):
+  model = Finch
+  fields = ['breed', 'description', 'age']
+
+class FinchDelete(DeleteView):
+  model = Finch
+  success_url = '/finches/'
